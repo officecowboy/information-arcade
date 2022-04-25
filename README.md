@@ -1,1 +1,1 @@
-# information-arcade
+# Welcome to the Information Arcade!
