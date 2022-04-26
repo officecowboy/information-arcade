@@ -76,6 +76,15 @@ nav {
   margin-top: 7px;
 }
 
+.subtitle>a {
+  text-decoration: none;
+  color: #7F7BAA;
+}
+
+.subtitle>a:hover {
+  text-decoration: underline;
+}
+
 .main-content {
   display: flex;
   width: 750px;
