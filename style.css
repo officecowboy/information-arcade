@@ -96,16 +96,21 @@ nav {
   justify-content: center;
 }
 
+.project-title {
+  font-size: 18px;
+}
+
 .project-description {
   margin: 0;
   margin-top: 5px;
+  font-size: 16px;
 }
 
 .project-icon {
-  max-width: 70px;
+  max-width: 80px;
   align-self: center;
   justify-self: center;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 #steve {
