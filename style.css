@@ -132,6 +132,11 @@ nav {
 
   nav {
     padding: 20px 0;
+    width: 100%;
+  }
+
+  .project {
+    padding: 20px 0;
   }
 
   .bar {
@@ -142,6 +147,10 @@ nav {
     max-width: 80px;
     justify-self: center;
     align-self: center;
+  }
+
+  .logo-text {
+    width: 100%;
   }
 
   .title {
