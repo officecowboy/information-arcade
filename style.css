@@ -76,12 +76,12 @@ nav {
   margin-top: 7px;
 }
 
-.subtitle>a {
+.subtitle-link {
   text-decoration: none;
   color: #7F7BAA;
 }
 
-.subtitle>a:hover {
+.subtitle-link:hover {
   text-decoration: underline;
 }
 
