@@ -139,7 +139,9 @@ nav {
   }
 
   .logo-icon {
-    width: 80px;
+    max-width: 80px;
+    justify-self: center;
+    align-self: center;
   }
 
   .title {
