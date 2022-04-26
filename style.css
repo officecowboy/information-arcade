@@ -1,16 +1,16 @@
 @font-face {
   font-family: Redaction-20-Regular;
-  src: url(/Fonts/Redaction_20-Regular.woff2);
+  src: url(Fonts/Redaction_20-Regular.woff2);
 }
 
 @font-face {
   font-family: Redaction-20-Italic;
-  src: url(/Fonts/Redaction_20-Italic.woff2);
+  src: url(Fonts/Redaction_20-Italic.woff2);
 }
 
 @font-face {
   font-family: Redaction-20-Bold;
-  src: url(/Fonts/Redaction_20-Bold.woff2);
+  src: url(Fonts/Redaction_20-Bold.woff2);
 }
 
 body {
