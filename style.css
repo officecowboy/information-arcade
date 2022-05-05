@@ -126,8 +126,10 @@ nav {
 }
 
 #backrub {
-  align-self: center;
+  align-self: end;
 }
+
+
 
 @media (max-width:850px) {
 
