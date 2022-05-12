@@ -108,6 +108,11 @@ nav {
   font-size: 18px;
 }
 
+.project-title>span {
+  font-size: 14px;
+  color: gray;
+}
+
 .project-description {
   margin: 0;
   margin-top: 5px;
