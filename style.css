@@ -149,6 +149,10 @@ nav {
   align-self: end;
 }
 
+#instakidz {
+  margin-left: 70px;
+}
+
 
 
 @media (max-width:850px) {
@@ -215,6 +219,10 @@ nav {
 
   #backrub {
     align-self: start;
+  }
+
+  #instakidz {
+    margin-left: 0;
   }
 
 }
