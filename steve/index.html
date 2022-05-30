@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="description"
+    content="Inspired by the class memory game Simon, follow Steve’s notifications for as long as you can.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://officecowboy.github.io/steve/">
+  <meta property="og:title" content="Steve Says">
+  <meta property="og:description"
+    content="Inspired by the class memory game Simon, follow Steve’s notifications for as long as you can.">
+  <meta property="og:image" content="Images/Tree-of-Knowledge-Good-Evil.jpeg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://officecowboy.github.io/steve/">
+  <meta property="twitter:title" content="Steve Says">
+  <meta property="twitter:description"
+    content="Inspired by the class memory game Simon, follow Steve’s notifications for as long as you can.">
+  <meta property="twitter:image" content="Images/Tree-of-Knowledge-Good-Evil.jpeg">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="Images/favicon.ico">
+  <link rel="apple-touch-icon" href="Images/favicon.ico">
+  <title>Steve Says</title>
+</head>
+
+<body>
+  <div class="intro">
+    <div class="intro-text">
+      Inspired by the <a href="https://americanhistory.si.edu/collections/search/object/nmah_1302005"
+        target="blank">classic memory game Simon,</a> follow Steve's notifications for
+      as
+      long as you can.
+    </div>
+    <img class="fullapple" src="Images/fullapple.png">
+    <img class="halfapple hidden" src="Images/apple_1bite_black.png">
+    <div class="intro-cta">
+      Turn on your sound and click the apple to begin...
+    </div>
+  </div>
+  <div class="container hidden">
+    <h1 class="title">Steve Says</h1>
+    <div class="app-box blocked">
+      <div class="app js-app" data-apps="facebook">
+        <img class="app-img" src="Images/slack_icon.png">
+        <div class="circle" data-ping="facebook" data-num=""></div>
+      </div>
+      <div class="app js-app" data-apps="twitter">
+        <img class="app-img" src="Images/twitter_icon.png">
+        <div class="circle" data-ping="twitter" data-num=""></div>
+      </div>
+      <div class="app js-app" data-apps="tiktok">
+        <img class="app-img" src="Images/imessage_icon.png">
+        <div class="circle" data-ping="tiktok" data-num=""></div>
+      </div>
+      <div class="app js-app" data-apps="instagram">
+        <img class="app-img" src="Images/instagram_icon.png">
+        <div class="circle" data-ping="instagram" data-num=""></div>
+      </div>
+    </div>
+    <div class="bottom-text">
+      <button class="start">Take Another Bite</button>
+      <h1 class="score">Level <span class="score-tally"></span></h1>
+    </div>
+  </div>
+  <div class="sounds">
+    <audio src="Sounds/instagram.mp3" data-sound="instagram"></audio>
+    <audio src="Sounds/twitter.mp3" data-sound="twitter"></audio>
+    <audio src="Sounds/imessage.mp3" data-sound="tiktok"></audio>
+    <audio src="Sounds/slack.mp3" data-sound="facebook"></audio>
+    <audio src="Sounds/gameover.wav" id="gameover"></audio>
+    <audio src="Sounds/Cartoon-crunching-bite.mp3" id="bite"></audio>
+    <audio src="Sounds/Cartoon-crunching-bite-short.mp3" id="biteshort"></audio>
+  </div>
+  <script src=" script.js"></script>
+</body>
+
+</html>
