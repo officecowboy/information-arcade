@@ -8,7 +8,7 @@
   <meta property="description"
     content="Inspired by the class memory game Simon, follow Steve’s notifications for as long as you can.">
 
-  <!-- Open Graph / Facebook -->
+  <!-- Open Graph / slack -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://officecowboy.github.io/steve/">
   <meta property="og:title" content="Steve Says">
@@ -52,17 +52,17 @@
   <div class="container hidden">
     <h1 class="title">Steve Says</h1>
     <div class="app-box blocked">
-      <div class="app js-app" data-apps="facebook">
+      <div class="app js-app" data-apps="slack">
         <img class="app-img" src="Images/slack_icon.png">
-        <div class="circle" data-ping="facebook" data-num=""></div>
+        <div class="circle" data-ping="slack" data-num=""></div>
       </div>
       <div class="app js-app" data-apps="twitter">
         <img class="app-img" src="Images/twitter_icon.png">
         <div class="circle" data-ping="twitter" data-num=""></div>
       </div>
-      <div class="app js-app" data-apps="tiktok">
+      <div class="app js-app" data-apps="imessage">
         <img class="app-img" src="Images/imessage_icon.png">
-        <div class="circle" data-ping="tiktok" data-num=""></div>
+        <div class="circle" data-ping="imessage" data-num=""></div>
       </div>
       <div class="app js-app" data-apps="instagram">
         <img class="app-img" src="Images/instagram_icon.png">
@@ -75,10 +75,10 @@
     </div>
   </div>
   <div class="sounds">
-    <audio src="Sounds/instagram.mp3" data-sound="instagram"></audio>
-    <audio src="Sounds/twitter.mp3" data-sound="twitter"></audio>
-    <audio src="Sounds/imessage.mp3" data-sound="tiktok"></audio>
-    <audio src="Sounds/slack.mp3" data-sound="facebook"></audio>
+    <audio src="Sounds/instagram.mp3" preload="auto" autobuffer data-sound="instagram"></audio>
+    <audio src="Sounds/twitter.mp3" preload="auto" autobuffer data-sound="twitter"></audio>
+    <audio src="Sounds/imessage.mp3" preload="auto" autobuffer data-sound="imessage"></audio>
+    <audio src="Sounds/slack.mp3" preload="auto" autobuffer data-sound="slack"></audio>
     <audio src="Sounds/gameover.wav" id="gameover"></audio>
     <audio src="Sounds/Cartoon-crunching-bite.mp3" id="bite"></audio>
     <audio src="Sounds/Cartoon-crunching-bite-short.mp3" id="biteshort"></audio>

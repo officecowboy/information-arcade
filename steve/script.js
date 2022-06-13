@@ -86,13 +86,15 @@ function clearNotifications() {
 }
 
 function nextPing() {
-  const apps = ['instagram', 'facebook', 'twitter', 'tiktok'];
+  const apps = ['instagram', 'slack', 'twitter', 'imessage'];
   const randomApp = apps[Math.floor(Math.random() * apps.length)];
   return randomApp;
 }
 
 function selectApp(x) {
-  document.querySelector(`[data-sound='${x}']`).play()
+
+  let pingSound = new Audio(`Sounds/${x}.mp3`);
+  pingSound.play();
 
   for (let j = 0; j < circles.length; j++) {
     if (circles[j].dataset.ping == `${x}`) {
