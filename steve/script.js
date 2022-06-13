@@ -93,8 +93,12 @@ function nextPing() {
 
 function selectApp(x) {
 
-  let pingSound = new Audio(`Sounds/${x}.mp3`);
-  pingSound.play();
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    document.querySelector(`[data-sound='${x}']`).play();
+  } else {
+    let pingSound = new Audio(`Sounds/${x}.mp3`);
+    pingSound.play();
+  }
 
   for (let j = 0; j < circles.length; j++) {
     if (circles[j].dataset.ping == `${x}`) {
