@@ -20,13 +20,22 @@ body {
   font-size: 14px;
   margin: 0;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
 }
 
+img {
+  object-fit: cover;
+}
+
 .container {
-  max-width: 700px;
+  max-width: 750px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
 }
 
 
@@ -42,11 +51,19 @@ nav {
   flex-direction: row;
   justify-content: center;
   padding: 20px;
+  height: 15%;
 }
 
 .logo-icon {
   max-width: 115px;
+  max-height: 115px;
   margin-right: 12px;
+}
+
+.logo-icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .logo-text {
@@ -87,13 +104,22 @@ nav {
 
 .main-content {
   display: flex;
-  width: 750px;
+  width: 650px;
   flex-direction: column;
+  align-items: center;
+}
+
+.game-content {
+  display: flex;
+  width: 650px;
+  margin-top: 40px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project {
   display: flex;
-  max-width: 600px;
+  max-width: 509px;
   flex-direction: row;
   padding: 40px 0px;
 }
@@ -145,20 +171,32 @@ nav {
   align-self: end;
 }
 
-#backrub {
+#cracked {
   align-self: end;
 }
 
-#instakidz {
-  margin-left: 70px;
+#backrub {
+  align-self: start;
 }
 
+#instakidz {
+  align-self: start;
+}
+
+.corner-wrapper {
+  display: block;
+  overflow: hidden;
+  width: 240px;
+  height: 450px;
+  border-radius: 30px;
+  transform: translateZ(0px);
+}
 
 
 @media (max-width:850px) {
 
   body {
-    height: 100%;
+    min-height: -webkit-fill-available;
   }
 
   .container {
@@ -166,8 +204,8 @@ nav {
   }
 
   nav {
-    padding: 20px 0;
-    width: 100%;
+    padding: 10px 0;
+    width: 95vw;
   }
 
   .project {
@@ -200,6 +238,13 @@ nav {
     width: 100%;
   }
 
+  .game-content {
+    margin-top: 0;
+    width: 100%;
+    justify-content: center;
+    height: 85%;
+  }
+
   .project {
     max-width: 100%;
   }
@@ -222,7 +267,12 @@ nav {
   }
 
   #instakidz {
-    margin-left: 0;
+    align-self: start;
   }
+
+  #cracked {
+    align-self: start;
+  }
+
 
 }
