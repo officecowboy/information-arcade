@@ -81,7 +81,7 @@ nav {
 .title {
   font-style: normal;
   font-weight: 700;
-  font-size: 42px;
+  font-size: 36px;
   color: #30106B;
 }
 
@@ -227,11 +227,11 @@ nav {
   }
 
   .title {
-    font-size: 26px;
+    font-size: 22px;
   }
 
   .subtitle {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .main-content {
