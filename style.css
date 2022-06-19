@@ -25,6 +25,10 @@ body {
   align-items: center;
 }
 
+.slogan {
+  font-family: Redaction-20-Italic, serif;
+}
+
 img {
   object-fit: cover;
 }
@@ -115,6 +119,7 @@ nav {
   margin-top: 40px;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .project {
@@ -192,6 +197,17 @@ nav {
   transform: translateZ(0px);
 }
 
+.footer {
+  display: flex;
+  width: 100%;
+  border-top: 2px solid #30106B;
+  margin-top: 20px;
+}
+
+.footer-text {
+  margin: 5px 0;
+  font-size: 10px;
+}
 
 @media (max-width:850px) {
 

@@ -1,14 +1,46 @@
 .pics {
-  max-width: 250px;
-  max-height: 380px;
-  height: auto;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
 }
 
 .img-container {
-  width: 500px;
+  position: relative;
   height: 500px;
+  width: 500px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.quote {
+  padding: 10px 30px;
+}
+
+.author {
+  align-self: flex-end;
+  padding-right: 30px;
+}
+
+.quote,
+.author {
+  color: white;
+  text-shadow: 1px 3px 8px rgba(0, 0, 0, 1), 1px 1px 13px rgba(0, 0, 0, 1);
+  font-size: 36px;
+}
+
+@media (max-width:550px) {
+
+  .img-container {
+    height: 350px;
+    width: 350px;
+  }
+
+  .quote,
+  .author {
+    font-size: 24px;
+  }
+
 }
