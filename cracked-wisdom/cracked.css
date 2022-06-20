@@ -15,6 +15,10 @@
   align-items: center;
 }
 
+#button {
+  margin-right: 20px;
+}
+
 .quote {
   padding: 10px 30px;
 }

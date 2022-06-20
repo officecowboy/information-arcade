@@ -31,6 +31,7 @@
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="cracked.css">
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </head>
 
 <body>
@@ -48,13 +49,16 @@
       </div>
     </nav>
     <section class="main-content">
-      <div class="img-container">
-        <img src="" class="pics">
-        <p class="quote"></p>
-        <p class="author"></p>
+      <div class="canvas">
+        <div class="img-container">
+          <img src="" class="pics">
+          <p class="quote"></p>
+          <p class="author"></p>
+        </div>
       </div>
       <div class="controls">
         <button type="button" id="button">NEW IMAGE</button>
+        <button type="button" id="download-image">DOWNLOAD</button>
       </div>
     </section>
     <footer class="footer">
@@ -63,5 +67,6 @@
     </footer>
 </body>
 <script src="generator.js"></script>
+<script src="download.js"></script>
 
 </html>
