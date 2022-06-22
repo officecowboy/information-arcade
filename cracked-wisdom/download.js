@@ -8,7 +8,7 @@ function setUpDownloadPageAsImage() {
       useCORS: true
     }).then(function (canvas) {
       console.log(canvas);
-      simulateDownloadImageClick(canvas.toDataURL(), 'file-name.png');
+      simulateDownloadImageClick(canvas.toDataURL(), 'crackedwisdom.png');
     });
   });
 }
