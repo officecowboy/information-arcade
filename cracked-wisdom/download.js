@@ -3,7 +3,10 @@ setUpDownloadPageAsImage();
 
 function setUpDownloadPageAsImage() {
   document.getElementById("download-image").addEventListener("click", function () {
-    html2canvas(document.querySelector(".canvas"), { allowTaint: true }).then(function (canvas) {
+    html2canvas(document.querySelector(".canvas"), {
+      allowTaint: true,
+      useCORS: true
+    }).then(function (canvas) {
       console.log(canvas);
       simulateDownloadImageClick(canvas.toDataURL(), 'file-name.png');
     });

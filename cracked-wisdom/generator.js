@@ -1,10 +1,11 @@
 function generator() {
 
   const btn = document.querySelector("#button")
-  let picUrl = "https://cracked-wisdom.herokuapp.com/phones/random"
-  let textUrl = "https://cracked-wisdom.herokuapp.com/quotes/random"
+  let picUrl = "https://agile-crag-84223.herokuapp.com/https://cracked-wisdom.herokuapp.com/phones/random"
+  let textUrl = "https://agile-crag-84223.herokuapp.com/https://cracked-wisdom.herokuapp.com/quotes/random"
 
   let image = document.querySelector(".pics");
+  image.crossorigin = "anonymous";
   image.src = "no-brain-loading.gif";
   let quote = document.querySelector(".quote");
   let author = document.querySelector(".author");
