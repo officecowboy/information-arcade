@@ -209,6 +209,11 @@
     padding: 0px;
   }
 
+  .trm-description>p {
+    padding: 0 25px;
+    font-size: 14px;
+  }
+
   .trm-stack {
     display: none;
   }
