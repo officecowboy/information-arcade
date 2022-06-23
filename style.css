@@ -44,6 +44,10 @@ body {
   align-items: center;
 }
 
+p {
+  font-family: Redaction-10-Regular, serif;
+}
+
 .slogan {
   font-family: Redaction-20-Italic, serif;
 }
@@ -54,6 +58,7 @@ img {
 
 .container {
   max-width: 1000px;
+  padding: 0 10px;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -218,6 +223,7 @@ nav {
 .footer {
   display: flex;
   width: 100%;
+  max-width: 100vw;
   border-top: 2px solid #30106B;
   margin-top: 20px;
 }
@@ -231,10 +237,6 @@ nav {
 
   body {
     min-height: -webkit-fill-available;
-  }
-
-  .container {
-    padding: 0 10px;
   }
 
   nav {
@@ -310,6 +312,10 @@ nav {
 
   #cracked {
     align-self: start;
+  }
+
+  .footer-text {
+    margin: 5px 10px;
   }
 
 

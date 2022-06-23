@@ -1,5 +1,5 @@
 .trm-content {
-  max-width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,7 +13,6 @@
   z-index: 3;
   background-color: BLACK;
   color: white;
-  font-family: VCR;
   font-size: 18px;
   display: flex;
   flex-direction: row;
@@ -22,6 +21,16 @@
   padding: 0 15px;
 }
 
+.video-bar>p {
+  font-family: VCR;
+}
+
+.small>p {
+  margin: 10px;
+  font-size: 16px;
+}
+
+
 .film-plyr {
   background-color: transparent;
   background-size: cover;
@@ -29,6 +38,14 @@
   position: relative;
   z-index: 2;
   border: 5px solid #000000;
+}
+
+.film-plyr-wide {
+  background-color: transparent;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .crt::after {
@@ -79,6 +96,146 @@
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.trm-grid {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.trm-description,
+.trm-video-embed,
+.trm-schematic,
+.trm-stack,
+.trm-003-video {
+  width: 50%;
+  margin: 20px 0;
+}
+
+.trm-video-embed {
+  position: relative;
+}
+
+.trm-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trm-description>p {
+  padding: 0 70px;
+  text-align: justify;
+  line-height: 1.3;
+  font-size: 16px;
+}
+
+.trm-schematic>img {
+  max-width: 100%;
+}
+
+.trm-stack {
+  display: flex;
+  justify-content: center;
+}
+
+.trm-stack>img {
+  max-width: 80%;
+}
+
+.credits>ul {
+  list-style-type: none;
+  padding: 0 25px;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.credits {
+  position: absolute;
+  bottom: 0;
+}
+
+.trm-002-mobile,
+.schematic-mobile {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .trm-description>p {
+    font-size: 14px;
+  }
+
+  .credits>ul {
+    font-size: 14px;
+  }
+
+  .small>p {
+    font-size: 12px;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .trm-description>p {
+    padding: 0 40px;
+    font-size: 12px;
+  }
+
+  .credits>ul {
+    font-size: 12px;
+  }
+
+}
+
+@media (max-width: 750px) {
+
+  .trm-description,
+  .trm-video-embed,
+  .trm-schematic,
+  .trm-stack,
+  .trm-003-video {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .trm-grid {
+    flex-direction: row-reverse;
+    margin: 0;
+  }
+
+  .container {
+    padding: 0px;
+  }
+
+  .trm-stack {
+    display: none;
+  }
+
+  .trm-002-mobile,
+  .schematic-mobile {
+    display: initial;
+  }
+
+  .schematic-mobile {
+    padding: 0 20px;
+  }
+
+  .trm-002-desktop,
+  .schematic-desktop {
+    display: none;
+  }
+
+  .credits {
+    position: relative;
+    padding-top: 25px;
+  }
+
+  .trm-title-text {
+    margin: 20px 0 0 0;
+  }
+
 }
 
 @media (max-width: 600px) {
