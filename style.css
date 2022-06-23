@@ -191,19 +191,19 @@ nav {
 }
 
 #steve {
-  align-self: end;
+  align-self: start;
 }
 
 #cracked {
-  align-self: end;
+  align-self: start;
 }
 
 #backrub {
-  align-self: start;
+  align-self: end;
 }
 
-#instakidz {
-  align-self: start;
+#trm {
+  align-self: end;
 }
 
 .corner-wrapper {
@@ -281,6 +281,10 @@ nav {
 
   .project {
     max-width: 100%;
+  }
+
+  .project-title {
+    font-size: 16px;
   }
 
   .project-description {
