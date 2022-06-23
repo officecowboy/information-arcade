@@ -7,28 +7,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Primary Meta Tags -->
-  <title>Cracked Wisdom</title>
+  <title>The Resurrection Machine</title>
   <meta name="title" content="Information Arcade">
-  <meta name="description" content="A random image generator that really makes you wonder...">
+  <meta name="description" content="A meditation on the act of recording and its various techniques.">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.informationarcade.com/">
   <meta property="og:title" content="Information Arcade">
-  <meta property="og:description" content="A random image generator that really makes you wonder...">
+  <meta property="og:description" content="A meditation on the act of recording and its various techniques.">
   <meta property="og:image" content="../Images/IA_preview.jpg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://www.informationarcade.com/">
   <meta property="twitter:title" content="Information Arcade">
-  <meta property="twitter:description" content="A random image generator that really makes you wonder...">
+  <meta property="twitter:description" content="A meditation on the act of recording and its various techniques.">
   <meta property="twitter:image" content="../Images/IA_preview.jpg">
 
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
   <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="cracked.css">
-  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <link rel="stylesheet" href="trm.css">
+  <link rel="stylesheet" href="plyr.css">
+  <link rel="stylesheet" href="plyr2.css">
+  <script src="https://cdn.plyr.io/3.5.6/plyr.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const player = Plyr.setup('.plyr__video-embed');
+    });
+  </script>
 </head>
 
 <body>
@@ -45,24 +52,35 @@
         </h2>
       </div>
     </nav>
-    <section class="main-content">
-      <div>
-        <div class="img-container">
-          <img src="" class="pics">
-          <p class="quote"></p>
-          <p class="author"></p>
+    <section class="trm-content">
+      <div class="full-video">
+        <div class="crt film-plyr">
+          <div class="crt plyr__video-embed" id="player">
+            <iframe src="https://www.youtube.com/embed/34yFcVwq7EM" allowfullscreen allowautoplay allowtransparency
+              allow="autoplay"></iframe>
+          </div>
+        </div>
+        <div class="video-bar">
+          <p>TRM004</p>
+          <p>LONDON, UK</p>
+          <p>JUNE 28, 2022</p>
         </div>
       </div>
-      <div class="controls">
-        <button type="button" id="button">NEW IMAGE</button>
+      <div class="trm-title-text">
+        <h1 class="trm-title">
+          The Resurrection Machine
+        </h1>
+        <h1 class="trm-subtitle">
+          <div>Video Installation</div>
+          <div>(Series)</div>
+        </h1>
       </div>
     </section>
     <footer class="footer canvas">
       <p class="footer-text"><span class="slogan">Recycle Reality Responsibly</span>™
         ♻ © <a href="https://www.realityrecycling.center/">RRC</a> 2022</p>
     </footer>
+  </section>
 </body>
-<script src="generator.js"></script>
-<script src="download.js"></script>
 
 </html>

@@ -13,9 +13,28 @@
   src: url(Fonts/Redaction_20-Bold.woff2);
 }
 
+@font-face {
+  font-family: Redaction-10-Regular;
+  src: url(Fonts/Redaction_10-Regular.woff2);
+}
+
+@font-face {
+  font-family: Redaction-10-Italic;
+  src: url(Fonts/Redaction_10-Italic.woff2);
+}
+
+@font-face {
+  font-family: Redaction-10-Bold;
+  src: url(Fonts/Redaction_10-Bold.woff2);
+}
+
+@font-face {
+  font-family: VCR;
+  src: url(Fonts/VCR_OSD_MONO_1.001.ttf);
+}
+
 body {
   width: 100%;
-  height: 100vh;
   font-family: Redaction-20-Regular, serif;
   font-size: 14px;
   margin: 0;
@@ -34,7 +53,7 @@ img {
 }
 
 .container {
-  max-width: 750px;
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: start;

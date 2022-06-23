@@ -1,0 +1,82 @@
+.trm-content {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.full-video {
+  margin: 20px 0;
+}
+
+.video-bar {
+  z-index: 3;
+  background-color: BLACK;
+  color: white;
+  font-family: VCR;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.film-plyr {
+  background-color: transparent;
+  background-size: cover;
+  width: 500px;
+  position: relative;
+  z-index: 2;
+  border: 5px solid #000000;
+}
+
+.crt::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.crt::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+.crt {
+  animation: textShadow 1.6s infinite;
+}
+
+.trm-title-text {
+  margin: 20px 0;
+}
+
+.trm-title {
+  font-size: 36px;
+  padding-bottom: 5px;
+}
+
+.trm-subtitle {
+  display: flex;
+  color: rgb(79, 79, 79);
+  font-size: 24px;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}

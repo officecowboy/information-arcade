@@ -1,0 +1,14 @@
+div.plyr__video-embed iframe {
+  top: -50%;
+  height: 200%;
+}
+
+button.plyr__control.plyr__control--overlaid {
+  background: black;
+  opacity: 1;
+}
+
+button.plyr__control.plyr__control--overlaid:hover {
+  opacity: 0.7;
+  background: black;
+}
