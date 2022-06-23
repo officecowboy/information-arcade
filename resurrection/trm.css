@@ -7,6 +7,7 @@
 
 .full-video {
   margin: 20px 0;
+  background-color: black;
 }
 
 .video-bar {
@@ -39,6 +40,13 @@
   z-index: 2;
   border: 5px solid #000000;
 }
+
+.coming-soon {
+  width: 500px;
+  margin: 0;
+  padding: 0;
+}
+
 
 .film-plyr-wide {
   background-color: transparent;
@@ -162,6 +170,7 @@
   display: none;
 }
 
+
 @media (max-width: 900px) {
   .trm-description>p {
     font-size: 14px;
@@ -237,6 +246,10 @@
     padding-top: 25px;
   }
 
+  .credits>ul {
+    font-size: 14px;
+  }
+
   .trm-title-text {
     margin: 20px 0 0 0;
   }
@@ -248,7 +261,8 @@
     margin: 0;
   }
 
-  .film-plyr {
+  .film-plyr,
+  .coming-soon {
     width: 100vw;
   }
 
