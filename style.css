@@ -220,6 +220,18 @@ nav {
   transform: translateZ(0px);
 }
 
+.corner-wrapper-round {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  transform: translateZ(0px);
+  margin: 0 15px;
+}
+
+
+
 .footer {
   display: flex;
   width: 100%;

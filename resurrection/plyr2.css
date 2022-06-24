@@ -12,3 +12,19 @@ button.plyr__control.plyr__control--overlaid:hover {
   opacity: 0.7;
   background: black;
 }
+
+.plyr--video {
+  height: 100%;
+}
+
+.plyr__video-embed {
+  height: 100%;
+}
+
+#first_video>.plyr__controls {
+  display: none;
+}
+
+.plyr--full-ui input[type=range] {
+  color: gray;
+}

@@ -170,6 +170,26 @@
   display: none;
 }
 
+.play-button {
+  position: absolute;
+  background-color: black;
+  width: 12%;
+  height: 12%;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+}
+
+.full-screen-button {
+  position: absolute;
+  background-color: black;
+  width: 12%;
+  height: 12%;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+}
+
 
 @media (max-width: 900px) {
   .trm-description>p {

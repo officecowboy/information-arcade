@@ -199,7 +199,7 @@ a.plyr__control::before {
 .plyr--video .plyr__control:hover,
 .plyr--video .plyr__control[aria-expanded=true] {
   background: #000000;
-  color: #fff
+  color: #fff;
 }
 
 .plyr__control--overlaid {
