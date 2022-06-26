@@ -19,6 +19,7 @@ button.plyr__control.plyr__control--overlaid:hover {
 
 .plyr__video-embed {
   height: 100%;
+  background-color: white;
 }
 
 #first_video>.plyr__controls {
