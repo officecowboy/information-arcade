@@ -26,6 +26,10 @@ button.plyr__control.plyr__control--overlaid:hover {
   display: none;
 }
 
+#first_video>div.plyr__video-embed>iframe {
+  transform: scale(1.9);
+}
+
 .plyr--full-ui input[type=range] {
   color: gray;
 }
