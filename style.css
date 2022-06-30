@@ -196,15 +196,15 @@ nav {
 }
 
 #steve {
-  align-self: end;
+  align-self: start;
 }
 
 #cracked {
-  align-self: end;
+  align-self: start;
 }
 
 #backrub {
-  align-self: start;
+  align-self: end;
 }
 
 #trm {
