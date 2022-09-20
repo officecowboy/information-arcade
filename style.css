@@ -196,7 +196,7 @@ nav {
 }
 
 #steve {
-  align-self: start;
+  align-self: end;
 }
 
 #cracked {
@@ -208,7 +208,7 @@ nav {
 }
 
 #trm {
-  align-self: end;
+  align-self: start;
 }
 
 .corner-wrapper {

@@ -127,6 +127,10 @@
   position: relative;
 }
 
+.bar-004 {
+  margin-top: 20px;
+}
+
 .trm-description {
   display: flex;
   justify-content: center;
