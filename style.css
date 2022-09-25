@@ -142,12 +142,12 @@ nav {
   margin-top: 40px;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .project {
   display: flex;
-  max-width: 509px;
+  max-width: 550px;
   flex-direction: row;
   padding: 40px 0px;
 }
@@ -175,7 +175,7 @@ nav {
 
 .project-author {
   margin-top: 5px;
-  font-size: 12px;
+  font-size: 14px;
   color: #7F7BAA;
 }
 
@@ -241,15 +241,11 @@ nav {
 }
 
 .footer-text {
-  margin: 5px 0;
-  font-size: 10px;
+  margin: 4px 0 8px 0;
+  font-size: 12px;
 }
 
 @media (max-width:850px) {
-
-  body {
-    min-height: -webkit-fill-available;
-  }
 
   nav {
     padding: 10px 0;
@@ -287,7 +283,8 @@ nav {
   }
 
   .game-content {
-    margin-top: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
     width: 100%;
     justify-content: center;
     height: 70%;
@@ -303,6 +300,10 @@ nav {
 
   .project-description {
     font-size: 14px;
+  }
+
+  .project-author {
+    font-size: 12px;
   }
 
   .project-icon {
@@ -327,7 +328,7 @@ nav {
   }
 
   .footer-text {
-    margin: 5px 10px;
+    margin: 4px 10px 8px 10px;
   }
 
 
