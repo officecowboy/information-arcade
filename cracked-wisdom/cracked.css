@@ -38,6 +38,10 @@
   font-size: 36px;
 }
 
+.cracked-content {
+  margin: 20px 0;
+}
+
 @media (max-width:550px) {
 
   .img-container {
@@ -48,10 +52,6 @@
   .quote,
   .author {
     font-size: 24px;
-  }
-
-  .cracked-content {
-    margin: 30px 0;
   }
 
 }
