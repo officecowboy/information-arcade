@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Primary Meta Tags -->
+  <title>The Cloud</title>
+  <meta name="title" content="The Cloud">
+  <meta name="description"
+    content="A collection of experiences, tools, and souvenirs from the Reality Recycling Center.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.informationarcade.com/">
+  <meta property="og:title" content="The Cloud">
+  <meta property="og:description"
+    content="A collection of experiences, tools, and souvenirs from the Reality Recycling Center.">
+  <meta property="og:image" content="../Images/IA_preview.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.informationarcade.com/">
+  <meta property="twitter:title" content="The Cloud">
+  <meta property="twitter:description"
+    content="A collection of experiences, tools, and souvenirs from the Reality Recycling Center.">
+  <meta property="twitter:image" content="../Images/IA_preview.jpg">
+
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="cloudstyle.css">
+
+  <script src="https://unpkg.com/three@0.113.1/build/three.js"></script>
+  <script src="https://unpkg.com/three@0.113.1/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://unpkg.com/png-js@1.0.0/zlib.js"></script>
+  <script src="https://unpkg.com/png-js@1.0.0/png.js"></script>
+</head>
+
+<body>
+  <section class="container">
+    <nav>
+      <a class="logo-icon-container" href="/"><img class="logo-icon" src="../Images/globe.png" alt=""></a>
+      <div class="logo-text">
+        <h1 class="title">
+          Information Arcade
+        </h1>
+        <div class="bar"></div>
+        <h2 class="subtitle">
+          Artifacts from the World Wide Web
+        </h2>
+      </div>
+    </nav>
+    <section class="main-content about-content">
+        
+        <div class="cloud">
+            <div id="canvas"></div>
+            <div id=error></div>
+            <div id="viewspacecontainer" !important>
+              <div id=info class=info>
+                Frames per second: <div id="fpsdisplay"></div>
+              </div>
+              <div id="Loading">
+                <h4>
+                  [Loading]
+                  <span id="texturergbprogress">RGBA images: 0/?</span>,
+                  <span id="texturefeaturesprogress">feature images: 0/?</span>
+                </h4>
+              </div>
+              <button id="myBtn">
+                <svg width="100%" height="100%" viewBox="0 0 800 800" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                  style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                  <g transform="matrix(1.74664,0,0,1.74642,-252.1,-60.7251)">
+                    <g id="Ebene1">
+                      <g>
+                        <g transform="matrix(3.48575,0,0,3.48575,-650.368,-420.328)">
+                          <circle cx="293.685" cy="196.267" r="65.165" style="fill:rgb(185,185,185);" />
+                        </g>
+                        <g transform="matrix(3.08698,0,0,3.08698,-779.162,-550.57)">
+                          <path
+                            d="M383.686,244.808L383.686,311.2L393.411,311.2L393.411,318.84L354.496,318.84L354.496,311.2L363.406,311.2L363.406,255.222L354.496,251.655L354.496,244.808L383.686,244.808Z"
+                            style="fill:white;" />
+                        </g>
+                        <g transform="matrix(3.22886,0,0,3.22886,-797.323,-547.116)">
+                          <circle cx="362.95" cy="211.755" r="11.84" style="fill:white;" />
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <div id="myModal" class="modal" !important>
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>
+                    Where does the cloud begin and end?
+                  </p>
+                  <p>
+                    The model loading behind this text could have began in any number of digital formats, but it is now
+                    something different entirely. Like a cloud formed of millions of droplets, sample images have been
+                    distributed across the neurons of a Neural Radiance Field (NeRF) and precomputed into a representational
+                    form capable of synthesizing novel, three-dimensional views in real time.
+                  </p>
+                  <p>
+                    This rendering technology, a Sparse Neural Radiance Grid (SNeRG), offers a glimpse into the potential for
+                    artificial intelligence to reshape reality as we know it. Just as the clouds above us morph into new
+                    shapes before our eyes, so too do the media we use to represent them. Learn more about the SNeRG from
+                    the <a href=https://arxiv.org/abs/2103.14645 target="blank">original paper</a> by Google
+                    Research.
+                  </p>
+                  <p id="last">
+                    Note: we recommend viewing in Firefox or Chrome. If you see a black box on Safari, you may need to
+                    update your OS in order to view the cloud.
+                  </p>
+                  <div class="controls">
+                    <div>Controls:</div>
+                    <div>Click + Drag to Move</div>
+                    <div>Scroll to Zoom</div>
+                  </div>
+                </div>
+              </div>
+              <div class=viewspace id="viewspace"></div>
+            </div>
+          </div>
+
+          <p class="cloud-mobile-warning">Open on desktop or widen your viewport to render the cloud!</p>
+        
+    </section>
+    <footer class="footer">
+      <p class="footer-text"><span class="slogan">Recycle Reality Responsibly</span>™
+        ♻ © <a href="https://www.recyclereality.net/">RRC</a> 2022</p>
+    </footer>
+  </section>
+  <script src="./Scripts/modal.js"></script>
+  <script>
+    var width = window.innerWidth
+      || document.documentElement.clientWidth
+      || document.body.clientWidth;
+
+    if (width > 720) {
+      document.write('<script src="./Scripts/index.js"><\/script>');
+    }
+  </script>
+</body>
+
+</html>

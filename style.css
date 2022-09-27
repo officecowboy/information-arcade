@@ -1,3 +1,5 @@
+
+
 @font-face {
   font-family: Redaction-20-Regular;
   src: url(Fonts/Redaction_20-Regular.woff2);
@@ -56,6 +58,8 @@ p {
 img {
   object-fit: cover;
 }
+
+input:focus { outline: none; }
 
 .container {
   max-width: 1000px;
@@ -152,7 +156,7 @@ nav {
 
 .project {
   display: flex;
-  max-width: 550px;
+  width: 550px;
   flex-direction: row;
   padding: 40px 0px;
 }
@@ -200,25 +204,28 @@ nav {
   margin-right: 20px;
 }
 
+#cloud {
+  align-self: start;
+}
+
 #steve {
   align-self: end;
 }
 
 #cracked {
-  align-self: start;
+  align-self: end;
 }
 
 #backrub {
-  align-self: end;
-}
-
-#trm {
   align-self: start;
 }
 
-#about {
+#trm {
   align-self: end;
-  width: 550px;
+}
+
+#about {
+  align-self: start;
 }
 
 #about>.project-icon {
@@ -263,6 +270,10 @@ nav {
 
 @media (max-width:850px) {
 
+  #cloud {
+    display: none;
+  }
+
   nav {
     padding: 10px 0;
     width: 95vw;
@@ -270,6 +281,7 @@ nav {
 
   .project {
     padding: 20px 0;
+    width: 100%;
   }
 
   .bar {

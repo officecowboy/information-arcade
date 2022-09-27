@@ -1,0 +1,157 @@
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: absolute;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: none;
+  /* Fallback color */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #dfdfdf;
+  border: 2px solid #000000;
+  padding: 20px;
+  width: 70%;
+  /* Could be more or less, depending on screen size */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* The Close Button */
+.close {
+  color: rgb(99, 99, 99);
+  font-size: 28px;
+  display: block;
+  text-align: right;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content p {
+  font-size: 14px;
+  font-family: Neue Haas Regular;
+  margin-bottom: 10px;
+}
+
+.last {
+  margin-bottom: 25px;
+}
+
+.controls {
+  width: 100%;
+  padding-top: 15px;
+  font-size: 14px;
+  color: rgb(99, 99, 99);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+#myBtn {
+  bottom: 8px;
+  right: 8px;
+  position: absolute;
+  border: none;
+  background: none;
+}
+
+svg {
+  width: 20px;
+}
+
+#error {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #444;
+  padding: 8px;
+  white-space: pre;
+  color: #fff;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+#info {
+  font-size: 12px;
+  bottom: 4px;
+  left: 8px;
+  position: absolute;
+}
+
+#fpsdisplay {
+  display: inline-block;
+}
+
+#Loading {
+  position: absolute;
+  top: 4px;
+  left: 8px;
+}
+
+#Loading h4 {
+  margin: 0px;
+}
+
+#viewspacecontainer {
+  position: relative;
+  text-align: left;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* The main SNeRG view */
+.view {
+  margin: 0 auto;
+  border: 3px solid #000;
+  overflow: hidden;
+  transform-origin: top left;
+}
+
+.cloud-mobile-warning {
+  display: none;
+}
+
+.view:focus {
+  outline: none;
+}
+
+
+
+@media (max-width: 740px) {
+
+  .cloud {
+    display: none;
+  }
+
+  .cloud-mobile-warning {
+    display: initial;
+  }
+
+}
