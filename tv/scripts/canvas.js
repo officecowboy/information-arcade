@@ -3,6 +3,18 @@ const sandbox = new GlslCanvas(canvas)
 
 document.body.appendChild(canvas)
 
+let channel = document.querySelector("#channel");
+
+const hideChannel = function () {
+    channel.style.display = "none"
+}
+
+const showChannel = function () {
+    channel.style.display = "block"
+}
+
+setTimeout(hideChannel, 2000)
+
 const sizer = function () {
     const ww = window.innerWidth
     const wh = window.innerHeight
@@ -32,6 +44,9 @@ document.querySelector("#right").addEventListener("click", function () {
     }
 
     sandbox.load(frag[current])
+    channel.innerHTML = `0${current + 1}`
+    showChannel()
+    setTimeout(hideChannel, 2000)
 })
 
 document.querySelector("#left").addEventListener("click", function () {
@@ -42,6 +57,9 @@ document.querySelector("#left").addEventListener("click", function () {
     }
 
     sandbox.load(frag[current])
+    channel.innerHTML = `0${current + 1}`
+    showChannel()
+    setTimeout(hideChannel, 2000)
 })
 
 sandbox.load(frag[current])

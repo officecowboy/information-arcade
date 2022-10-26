@@ -20,6 +20,15 @@ canvas {
     z-index: -1;
 }
 
+.channel-number {
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    font-family: VCR;
+    font-size: 72px;
+    color: #05ff01;
+}
+
 .tv-grain {
     position: fixed;
     bottom: 0;
@@ -75,7 +84,7 @@ canvas {
 }
 
 .tv-globe-container {
-    width: 124px;
+    width: 146px;
 }
 
 .tv-globe {
@@ -92,6 +101,13 @@ button {
     margin: 10px;
     padding: 4px 7px;
   }
+
+button>img {
+    width: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
 
 .custom-btn {
 color: white;
@@ -131,4 +147,15 @@ transform: translateY(2px);
     .rrc-logo-chrome {
         display: none;  
     }
+
+    .channel-number {
+        position: absolute;
+        top: 2%;
+        left: 6%;
+        font-family: VCR;
+        font-size: 72px;
+        color: #05ff01;
+    }
+
+
    }
