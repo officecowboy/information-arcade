@@ -22,8 +22,8 @@ canvas {
 
 .channel-number {
     position: absolute;
-    top: 2%;
-    left: 3%;
+    top: 8px;
+    left: 25px;
     font-family: VCR;
     font-size: 72px;
     color: #05ff01;

@@ -9,6 +9,8 @@ const hideChannel = function () {
     channel.style.display = "none"
 }
 
+let timeout;
+
 const showChannel = function () {
     channel.style.display = "block"
 }
@@ -37,6 +39,7 @@ const fragArray = frag;
 current = 0;
 
 document.querySelector("#right").addEventListener("click", function () {
+    clearTimeout(timeout)
     current += 1
 
     if (current >= fragArray.length) {
@@ -46,10 +49,11 @@ document.querySelector("#right").addEventListener("click", function () {
     sandbox.load(frag[current])
     channel.innerHTML = `0${current + 1}`
     showChannel()
-    setTimeout(hideChannel, 2000)
+    timeout = setTimeout(hideChannel, 2000)
 })
 
 document.querySelector("#left").addEventListener("click", function () {
+    clearTimeout(timeout)
     current -= 1
 
     if (current < 0) {
@@ -59,7 +63,7 @@ document.querySelector("#left").addEventListener("click", function () {
     sandbox.load(frag[current])
     channel.innerHTML = `0${current + 1}`
     showChannel()
-    setTimeout(hideChannel, 2000)
+    timeout = setTimeout(hideChannel, 2000)
 })
 
 sandbox.load(frag[current])
