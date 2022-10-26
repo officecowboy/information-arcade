@@ -90,15 +90,7 @@ canvas {
 
 button {
     margin: 10px;
-  }
-
-  #left {
     padding: 4px 7px;
-    font-size: 23px;
-  }
-
-  #right {
-    padding: 7px 9px;
   }
 
 .custom-btn {
