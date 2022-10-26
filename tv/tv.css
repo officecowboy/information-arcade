@@ -1,5 +1,12 @@
+html {
+    height: -webkit-fill-available;
+  }
+
 body {
     background-color: black;
+    min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
 }
 
 canvas {
@@ -30,20 +37,19 @@ canvas {
     bottom: 0;
     width: 100vw;
     height: 80px;
-    background-color: #9a9a9a;
-    border-top: 3px solid;
+    background-image: linear-gradient(to right bottom, #878787, #919191, #9a9a9a, #a4a4a4, #aeaeae, #a9a9a9, #a4a4a4, #9f9f9f, #8b8b8b, #777777, #646464, #515151);    border-top: 3px solid;
     border-image: linear-gradient(
         -72deg,
         #dedede,
-        #ffffff 16%,
+        #dcdcdc 16%,
         #dedede 21%,
-        #ffffff 24%,
+        #ebebeb 24%,
         #a1a1a1 27%,
-        #dedede 36%,
-        #ffffff 45%,
-        #ffffff 60%,
+        #d8d8d8 36%,
+        #c7c7c7 45%,
+        #efefef 60%,
         #dedede 72%,
-        #ffffff 80%,
+        #f0f0f0 80%,
         #dedede 84%,
         #a1a1a1
       ) 1;
@@ -64,16 +70,22 @@ canvas {
     -webkit-text-stroke-color: black;
 }
 
-.tv-prev-next-container>img {
-    width: 35px;
-    margin-right: 25px;
-    height: auto;
+.tv-prev-next-container {
+    margin-right: 10px;
 }
 
+.tv-globe-container {
+    width: 124px;
+}
 
 .tv-globe {
     width: 50px;
-    margin-left: 25px;
+    margin-left: 20px;
+}
+
+.rrc-logo-chrome {
+    height: auto;
+    width: 160px;
 }
 
 button {
@@ -81,11 +93,12 @@ button {
   }
 
   #left {
-    padding: 6.2px 7px;
+    padding: 4px 7px;
+    font-size: 23px;
   }
 
   #right {
-    padding: 10px;
+    padding: 7px 9px;
   }
 
 .custom-btn {
@@ -120,4 +133,10 @@ transform: translateY(2px);
        hsl(0,0%,90%) 47%, 
        hsl(0,0%,78%) 53%,
        hsl(0,0%,70%)100%);
+   }
+
+   @media (max-width: 500px) {
+    .rrc-logo-chrome {
+        display: none;  
+    }
    }

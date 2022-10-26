@@ -1,4 +1,5 @@
-const frag = [`
+const frag = [
+`
 #ifdef GL_ES
 precision highp float;
 #endif
@@ -57,6 +58,97 @@ void main(void)
     // final pixel color is...
     vec4 color = mix(color1, color2, mixer);
     
+    
+    gl_FragColor = color;
+}
+`,
+
+`
+#ifdef GL_ES
+precision highp float;
+#endif
+
+uniform float u_time;
+uniform vec2 u_resolution;
+uniform vec2 u_mouse;
+
+varying vec3 v_normal;
+varying vec2 v_texcoord;
+
+float random (vec2 st) {
+    return fract(sin(dot(st.xy,
+                         vec2(12.9898,78.233)))*
+        43758.5453123);
+}
+
+void main(void)
+{
+    vec2 uv = v_texcoord;
+    
+    vec4 color1 = vec4(1.0, 1.0, 1.0, 1.0);
+    vec4 color2 = vec4(0.0, 0.0, 0.0, 1.0);
+    
+    float f = random(uv + u_time * 0.01);
+    
+    vec4 color = mix(color1, color2, f);
+    
+    
+    gl_FragColor = color;
+}
+`,
+
+`
+#ifdef GL_ES
+precision highp float;
+#endif
+
+#define SEGMENTS 20.0
+#define PI 3.141592653589
+
+uniform float u_time;
+uniform vec2 u_resolution;
+uniform vec2 u_mouse;
+
+uniform sampler2D image;
+
+varying vec2 v_texcoord;
+
+void main(void)
+{
+    vec2 uv = v_texcoord;
+    uv *= 2.0;
+    uv -= 1.0;
+
+    // make mouse
+    vec2 mouse = u_mouse / u_resolution;
+    
+    // get angle and radius
+    float radius = length(uv) * mix(1.0, 1.5, mouse.x);
+    float angle = atan(uv.y, uv.x);
+    
+    // get a segment
+    angle /= PI * 2.0;
+    angle *= SEGMENTS;
+    
+    // repeat segment
+    if (mod(angle, 2.0) > 1.0) {
+        angle = fract(angle);
+    } else {
+        angle = 1.0 - fract(angle);
+    }
+    
+    angle += u_time * 0.3;
+    angle += mouse.y * 2.0;
+    
+    // unsquash segment
+    angle /= SEGMENTS;
+    angle *= PI * 2.0;
+    
+    vec2 point = vec2(radius * cos(angle), radius * sin(angle));
+    point *= vec2(1.0, 0.666);
+    point = fract(point);
+    
+    vec4 color = texture2D(image, point);
     
     gl_FragColor = color;
 }

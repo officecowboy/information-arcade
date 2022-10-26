@@ -21,5 +21,29 @@ window.addEventListener("resize", function () {
     sizer()
 })
 
-sandbox.load(frag[0])
+const fragArray = frag;
+current = 0;
+
+document.querySelector("#right").addEventListener("click", function () {
+    current += 1
+
+    if (current >= fragArray.length) {
+        current = 0
+    }
+
+    sandbox.load(frag[current])
+})
+
+document.querySelector("#left").addEventListener("click", function () {
+    current -= 1
+
+    if (current < 0) {
+        current = fragArray.length - 1
+    }
+
+    sandbox.load(frag[current])
+})
+
+sandbox.load(frag[current])
 sandbox.setUniform("seed", Math.random())
+sandbox.setUniform("image", "light.jpg")
