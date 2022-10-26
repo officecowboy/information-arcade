@@ -74,6 +74,7 @@ canvas {
     font-size: 36px;
     font-family: sofachrome,sans-serif;
     font-weight: 400;
+    margin-top: 3px;
     font-style: normal;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
@@ -87,9 +88,15 @@ canvas {
     width: 146px;
 }
 
+.tv-globe-container>a {
+    line-height: 0;
+    margin: 0;
+}
+
 .tv-globe {
     width: 50px;
     margin-left: 20px;
+    margin-top: 3px;
 }
 
 .rrc-logo-chrome {
@@ -146,15 +153,6 @@ transform: translateY(2px);
    @media (max-width: 500px) {
     .rrc-logo-chrome {
         display: none;  
-    }
-
-    .channel-number {
-        position: absolute;
-        top: 2%;
-        left: 6%;
-        font-family: VCR;
-        font-size: 72px;
-        color: #05ff01;
     }
 
 
