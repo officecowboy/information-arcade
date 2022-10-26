@@ -24,7 +24,7 @@ canvas {
     position: fixed;
     bottom: 0;
     width: 100vw;
-    height: 80px;
+    height: 70px;
     background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
     z-index: 5;
     display: flex;
@@ -36,7 +36,7 @@ canvas {
     position: fixed;
     bottom: 0;
     width: 100vw;
-    height: 80px;
+    height: 70px;
     background-image: linear-gradient(to right bottom, #878787, #919191, #9a9a9a, #a4a4a4, #aeaeae, #a9a9a9, #a4a4a4, #9f9f9f, #8b8b8b, #777777, #646464, #515151);    border-top: 3px solid;
     border-image: linear-gradient(
         -72deg,
