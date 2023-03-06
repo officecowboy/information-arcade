@@ -47,6 +47,28 @@ body {
   align-items: center;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 18px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #efefef;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cfcfcf;
+  border: 2px solid #787878;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #787878;
+  border: 2px solid black;
+}
+
 p {
   font-family: Redaction-10-Regular, serif;
 }
